@@ -13,23 +13,25 @@ A full-stack web application that shortens URLs, tracks clicks, and visualizes a
 
 ## Project Structure
 
+```
 grepsr/
 ├── backend/
-│ ├── app.py # Flask routes
-│ ├── database.py # SQLite setup and connection
-│ ├── rate_limiter.py # Custom rate limiting logic
-│ ├── requirements.txt # Python dependencies
-│ └── Dockerfile
+│   ├── app.py              # Flask routes
+│   ├── database.py         # SQLite setup and connection
+│   ├── rate_limiter.py     # Custom rate limiting logic
+│   ├── requirements.txt    # Python dependencies
+│   └── Dockerfile
 ├── frontend/
-│ ├── src/
-│ │ ├── App.js
-│ │ ├── components/
-│ │ │ ├── UrlShortener.jsx
-│ │ │ └── Dashboard.jsx
-│ ├── package.json
-│ └── Dockerfile
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── components/
+│   │   │   ├── UrlShortener.jsx
+│   │   │   └── Dashboard.jsx
+│   ├── package.json
+│   └── Dockerfile
 ├── docker-compose.yml
 └── README.md
+```
 
 ## How to Run
 
@@ -101,7 +103,7 @@ The frontend reads `retry_after_seconds` and displays a live countdown timer so 
 ## Tech Stack
 
 | Layer | Technology |
-
+|---|---|
 | Backend | Python 3.12, Flask, SQLite |
 | Frontend | React, Chart.js, Axios |
 | Containerization | Docker, Docker Compose |
